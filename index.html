@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Criador de Currículo</h1>
+        <form id="form">
+            <div>
+                <input type="date" id="date">
+            </div>
+            <div id="names">
+                <input type="text" placeholder="Nome da escola" class="inputs required" id="name">
+                <input type="number" placeholder="CPF" class="inputs required" id="cpf">
+            </div>
+            <h1>Pessoal</h1>
+            <div>
+                <input type="text" placeholder="Nome Completo" class="inputs required" id="nome">
+            </div>
+            
+            <div id="selects">
+                <div>
+                    <input list="nalionalidade" class="select" placeholder="Nacionalidade">
+                    <datalist id="nalionalidade">
+                        <option value="Brasil">Brasil</option>
+                        <option value="EUA">Estados Unidos das Americas</option>
+                        <option value="Japão">Japão</option>
+                        <option value="China">China</option>
+                    </datalist>
+                </div>
+                <div>
+                    <input list="estado" class="select" placeholder="Estado">
+                    <datalist name="Estado" id="estado">
+                        <option value="CE">Ceará</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </datalist>
+                </div>
+                <div>
+                    <input list="city" class="select" placeholder="Cidade">
+                    <datalist id="city">
+                        <option value="Icapui">Icapui</option>
+                        <option value="Aracati">Aracati</option>
+                        <option value="Fortal">Fortaleza</option>
+                        <option value="Moscoucity">Mossoro</option>
+                    </datalist>
+                </div>
+            </div>
+            <p>Sexo:</p>
+
+            <div class="radio">
+                <div>
+                    <input type="radio" id="m" name="Sexo" value="m">
+                    <label for="m">Masculino</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="Sexo" id="f" value="f">
+                    <label for="f">Feminino</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="Sexo" id="o" value="o">
+                    <label for="o">Outro</label>
+                </div>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
