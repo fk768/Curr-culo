@@ -24,10 +24,10 @@ body {
 }
 #date{
     position: absolute;
-    top:-35px;
-    right:0;
+    top:-60px;
+    right:-20px;
     padding: 5px;
-    width: 200px;
+    width: 150px;
     border-radius: 5px;
     border: 0;
     border-bottom:2px solid;
@@ -39,8 +39,9 @@ body {
 }
 #name,#cpf{
     width: 300px;
+    border-bottom:2px solid;
 }
-h1 {
+h1 , h2 {
     text-align:left;
     color: white;
 }
@@ -68,12 +69,14 @@ h1 {
 }
 #nome{
     margin-bottom: 10px;
+    border-bottom:2px solid;
 }
 .select{
     width: 150px;
     padding: 5px;
     border: 0;
     border-radius: 5px;
+    border-bottom:2px solid;
 }
 button {
     padding: 20px;
@@ -101,6 +104,6 @@ label {
 p {
     color: white;
 }
-@media screen {
-    
+#ev:hover {
+    background-color: rgb(172, 167, 167);
 }
