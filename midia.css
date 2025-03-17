@@ -1,36 +1,54 @@
-@media screen and (max-width:800px) {
+/*Config Mobile*/
+@media screen and (max-width:500px) {
     .container {
-        position: relative;
-        background-color: #555357;
         padding: 20px;
         width: 75%;
+        height: 90%;
         min-width: 55%;
-        border-radius: 20px;
     }
     #date{
-        position: absolute;
         top:-45px;
         right:0;
         padding: 2px;
         width: 100px;
-        border-radius: 5px;
-        border: 0;
-        border-bottom:2px solid;
     }
     #cc{
         position: relative;
         top:15px;
     }
     #names{
-        display: flex;
         flex-direction: column;
         gap: 10px;
     }   
     #selects{
         display: flex;
         flex-direction: column;
-        gap: 10px;
         align-items: center;
+        gap: 10px;
     }
+    .select{
+    width: 250px;
+    }
+}
 
+/*Config Tablet*/
+@media screen and (min-width:500px) and (max-width:1200px) {
+    .container {
+        padding: 25px;
+        width: 65%;
+        min-width: 45%;
+    }
+    #date{
+        top:-47px;
+        right:0;
+        padding: 2px;
+        width: 150px;
+    }
+    #cc{
+        position: relative;
+        top:15px;
+    }
+    .select{
+        max-width: 105px;
+    }
 }
