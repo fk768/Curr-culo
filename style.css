@@ -1,25 +1,20 @@
-
-
 * {
     padding: 0;
     margin: 0;
 }
-
 body {
-    background-color: rgb(153, 151, 151);
+    background-color: #19111b;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .container {
     position: relative;
-    background-color: #555357;
+    background-color: #27052a;
     padding: 32px;
-    width: 35%;
-    min-width: 30%;
+    width: 45%;
     border-radius: 20px;
 }
 #date{
@@ -30,29 +25,27 @@ body {
     width: 150px;
     border-radius: 5px;
     border: 0;
-    border-bottom:2px solid;
+    border-bottom:2px solid rgb(166, 166, 166);
 }
 #names{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 #name,#cpf{
-    width: 300px;
-    border-bottom:2px solid;
+    max-width: 100%;
+    border-bottom:2px solid rgb(166, 166, 166);
 }
-h1 , h2 {
+h1 , h2, p , label {
     text-align:left;
     color: white;
 }
-
 .container form {
     display: flex;
     gap: 20px;
     flex-direction: column;
 }
-
-
 .inputs {
     padding: 8px 5px;
     border-radius:5px ;
@@ -69,14 +62,14 @@ h1 , h2 {
 }
 #nome{
     margin-bottom: 10px;
-    border-bottom:2px solid;
+    border-bottom:2px solid rgb(166, 166, 166);
 }
 .select{
-    width: 150px;
+    width: 160px;
     padding: 5px;
     border: 0;
     border-radius: 5px;
-    border-bottom:2px solid;
+    border-bottom:2px solid rgb(166, 166, 166);
 }
 button {
     padding: 20px;
@@ -87,6 +80,8 @@ button {
     margin-top: 20px;
     cursor: pointer;
     transition: .5s;
+    background-color:#460b4b;
+    color: white;
 }
 textarea {
     resize: none;
@@ -98,12 +93,13 @@ div {
     display: flex;
     justify-content: space-between;
 }
-label {
-    color: white;
+#button:hover {
+    background-color:#120315;
 }
-p {
-    color: white;
+input[type='radio']{
+    accent-color: #120315;
 }
-#ev:hover {
-    background-color: rgb(172, 167, 167);
+input{
+    background-color:#460b4b;
+    color: white;
 }
