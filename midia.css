@@ -15,6 +15,7 @@
     #cc{
         position: relative;
         top:15px;
+        font-size: 25px;
     }
     #names{
         flex-direction: column;
@@ -49,6 +50,6 @@
         top:15px;
     }
     .select{
-        max-width: 105px;
+        max-width: 150px;
     }
 }
