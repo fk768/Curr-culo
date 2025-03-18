@@ -1,5 +1,5 @@
 /*Config Mobile*/
-@media screen and (max-width:500px) {
+@media screen and (max-width:650px) {
     .container {
         padding: 20px;
         width: 75%;
@@ -33,7 +33,7 @@
 }
 
 /*Config Tablet*/
-@media screen and (min-width:500px) and (max-width:1200px) {
+@media screen and (min-width:650px) and (max-width:1200px) {
     .container {
         padding: 25px;
         width: 65%;
